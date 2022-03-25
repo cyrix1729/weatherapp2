@@ -1,0 +1,96 @@
+@import '~style/helpers';
+
+
+.container { 
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/cloudy.jpg');
+	color: rgb(255, 255, 255);
+	width: 414px;
+	height: 736px;
+	text-align: center;
+	padding-top: 80px;
+	margin: 0 auto;
+	font: 'arial';
+	font-weight: 900;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.details {
+	flex: 4;
+}
+.city {
+	flex: 1;
+	font-size: 3em;
+	font-weight: 500;	
+}
+
+.range {
+	color: rgb(252, 252, 252);
+	flex: 1;
+	font-size: 1.3em;
+	font-weight: 1;	
+	
+}
+.conditions {
+	flex: 1;
+	font-size: 2em;
+}
+.temperature {
+	flex:;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -6px;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+}
+.hum{
+	flex: 1;
+	font-size: 1.3em;
+	font-weight: 1;	
+}
+
+.hi{
+	flex: 3;
+	font-size: 1em;
+	font-weight: 1;	
+	display: inline-block;
+	padding: 0.4em;
+
+}
+
+.lo{
+	flex: 1;
+	font-size: 1em;
+	font-weight: 1;
+	display: inline-block;	
+	padding: 0.4em;
+
+}
+.filledR:after{
+	content: "°";
+	flex: 1;
+	font-size: 1em;
+	font-weight: 1;	
+
+}
+.filled:after {
+	content: "°C";
+	// margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 500;
+	display: inline-block;
+	padding-top: 10px;
+	left: 31em;
+	vertical-align: top;
+}
+.filledH:after{
+	content: "%";
+	flex: 1;
+	font-size: 1em;
+	font-weight: 1;	
+}
