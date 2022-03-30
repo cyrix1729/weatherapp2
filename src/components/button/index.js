@@ -13,11 +13,9 @@ export default class Button extends Component {
         }
         return ( <
             div >
-            <
-            button onClick = { cFunction }>
-            Get Weather <
-            /button> < /
-            div >
+            
+           {cFunction()}
+            < /div >
         );
     }
 }

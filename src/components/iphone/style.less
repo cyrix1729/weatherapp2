@@ -42,7 +42,7 @@
 .temperature {
 	flex:;
 	margin-top: 0;
-	font-size: 4.8em;
+	font-size: 6.5em;
 	font-weight: 300;
 	letter-spacing: -6px;
 	font-weight: 700;
@@ -76,21 +76,29 @@
 	flex: 1;
 	font-size: 1em;
 	font-weight: 1;	
+	position: relative;
+	left:-0.3em
 
 }
 .filled:after {
 	content: "°C";
 	// margin: 0 0 0 1rem;
-	font-size: 0.5em;
+	font-size: 0.7em;
 	font-weight: 500;
 	display: inline-block;
 	padding-top: 10px;
-	left: 31em;
 	vertical-align: top;
+	position: relative;
+  	left: -0.3em;
 }
+
+
+
 .filledH:after{
 	content: "%";
 	flex: 1;
 	font-size: 1em;
 	font-weight: 1;	
+	position: relative;
+	left:-0.3em
 }
