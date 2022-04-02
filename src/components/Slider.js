@@ -51,11 +51,11 @@ export default function Slider() {
 	return (
 		<div>
 			{weather &&
-				weather.slice(currentStartTime, currentEndTime).map((weather) => {
+				weather.slice(currentStartTime, currentEndTime).map((data) => {
 					return (
-						<div key={weather.dt}>
-							<h1>{weather.dt_txt.slice(11, 16)}</h1>
-							<h3>{weather.main.temp}</h3>
+						<div key={data.dt}>
+							<h1>{data.dt_txt.slice(11, 16)}</h1>
+							<h3>{(data.main.temp - 32) / 1.8}</h3>
 						</div>
 					);
 				})}
