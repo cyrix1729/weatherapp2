@@ -7,7 +7,7 @@
 .App{
   display: flex;
 	flex-direction: column;
-	background-color: gray;
+	background-color: cyan;
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
@@ -47,10 +47,11 @@
   background-image: url('./assets/');
 } */
 
-
 /*TO-DO STYLE START*/
 .todocomponents{
-  margin-top: 160px;
+  width: 45%;
+  position: fixed;
+  margin-top: 500px;
 }
 .header {
   justify-content: space-between;
@@ -130,6 +131,7 @@
   font-size: 11pt;
 }
 /*TO-DO STYLE END*/
+
 /* STYLING FOR WEATHER DATA ON HOME PAGE*/
 .search-box input{
 	width: 90%;
@@ -168,7 +170,7 @@
   
 }
 .temperature {
-	flex:;
+	flex:1;
 	margin-top: 0;
 	font-size: 6.5em;
 	font-weight: 300;
