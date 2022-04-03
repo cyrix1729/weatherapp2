@@ -49,10 +49,9 @@
 
 /*TO-DO STYLE START*/
 .todocomponents{
-  width: 45%;
-  position: fixed;
-  margin-top: 500px;
-}
+  margin-top: 170px;
+}  
+
 .header {
   justify-content: space-between;
   font-size: 0.7em;
@@ -92,7 +91,7 @@
   text-decoration: line-through;
   text-decoration-color: green;
   text-decoration-thickness: 3px;
-  color: black;
+  color: white;
 }
 
 
