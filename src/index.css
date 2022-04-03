@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App{
+  display: flex;
+	flex-direction: column;
+	background-color: gray;
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+	color: white;
+	width: 414px;
+	height: 736px;
+  padding: 5px;
+	text-align: center;
+	margin: 0 auto;
+  
+}
+.App.clear{
+  background-image: url("./assets/clear.png");
+}
+.App.clear.night{
+  background-image: url('./assets/clearnight.jpg');
+}
+.App.rain{
+  background-image: url('./assets/rainy.png');
+}
+.App.snow{
+  background-image: url('./assets/snow.jpg');
+}
+.App.cloudy{
+  background-image: url('./assets/cloudy.jpg');
+}
+
+/* 
+
+.App.thunderstorm{
+  background-image: url('./assets/');
+}
+.App.atmosphere{
+  background-image: url('./assets/');
+}
+.App.drizzle{
+  background-image: url('./assets/');
+} */
+
+
+/*TO-DO STYLE START*/
+.todocomponents{
+  margin-top: 160px;
+}
+.header {
+  justify-content: space-between;
+  font-size: 0.7em;
+  font-weight: 50;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.container {
+  overflow: auto;
+  width: 80%;
+  height: 125px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 40px;
+  border: 2px solid black;
+}
+.todo{
+  margin-bottom: 2%;
+}
+.removeitemsbutton{
+  display: inline-block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 6px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12pt;
+}
+.todo {
+  cursor: pointer;
+  color: red;
+}
+.strike {
+  text-decoration: line-through;
+  text-decoration-color: green;
+  text-decoration-thickness: 3px;
+  color: black;
+}
+
+
+.Addheader {
+  justify-content: space-between;
+  font-size: 10pt;
+  text-align: center;
+  color: white;
+}
+.containerform{
+  margin-top: 10px;
+  overflow: auto;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 0px;
+}
+.textbox{
+  border: 2px solid black;
+  width: 20%;
+  border-color: black;
+  padding: 7px 5px;
+  margin: 1px;
+  border-radius: 5px;
+}
+.submittbtn {
+  background: black;
+  color: white;
+  width: 20%;
+  border: none;
+  padding: 10px 5px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 11pt;
+}
+/*TO-DO STYLE END*/
+/* STYLING FOR WEATHER DATA ON HOME PAGE*/
+.search-box input{
+	width: 90%;
+	font-size: 13pt;
+  border: 1px solid white;
+  background-color: clear;
+  padding: 10px 10px;
+}
+
+.MainData{
+  margin-top: 2em;
+
+}
+
+.details {
+	flex: 4;
+}
+.city {
+	flex: 1;
+	font-size: 3em;
+	font-weight: 400;	
+}
+
+.range {
+	color: rgb(252, 252, 252);
+	flex: 1;
+	font-size: 1.3em;
+	font-weight: 1;	
+  letter-spacing: 2em;
+	
+}
+.conditions {
+  margin-top: -0.3em;
+	flex: 1;
+	font-size: 3.1em;
+  
+}
+.temperature {
+	flex:;
+	margin-top: 0;
+	font-size: 6.5em;
+	font-weight: 300;
+	letter-spacing: -6px;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+}
+.hum{
+	font-size: 1em;
+	font-weight: 300;	
+	padding: 0.4em;
+  letter-spacing: normal;
+}
+
+.range{
+	font-size: 1em;
+	font-weight: 300;	
+	padding: 0.4em;
+  letter-spacing: normal;
+}
+
+
+
+
+
+
+
+/* .filledR:after{
+	content: "°";
+	flex: 1;
+	font-size: 1em;
+	font-weight: 1;	
+	position: relative;
+	left:-0.3em
+
+}
+.filled:after {
+	content: "°C";
+	// margin: 0 0 0 1rem;
+	font-size: 0.7em;
+	font-weight: 500;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+	position: relative;
+  	left: -0.3em;
+}
+
+.filledH:after{
+	content: "%";
+	flex: 1;
+	font-size: 1em;
+	font-weight: 1;	
+	position: relative;
+	left:-0.3em
+} */

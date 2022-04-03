@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "task": "Maths",
+    "complete": true,
+    "start": " 09:00am",
+    "end": " 10:00am"
+  },
+  {
+    "id": 2,
+    "task": "English",
+    "complete": true,
+    "start": " 11:00am",
+    "end": " 11:30am"
+  },
+  {
+    "id": 3,
+    "task": "Science",
+    "complete": false,
+    "start": " 12:00pm",
+    "end": " 12:45pm"
+  }
+
+]
