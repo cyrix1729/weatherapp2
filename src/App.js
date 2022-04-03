@@ -21,8 +21,29 @@ function App() {
     if (unit === 'Imperial'){
       unitType = 'F'
     }
-    
-    
+    // Location
+    const [details, setDetails] = useState(null);
+  
+      const getUserGeolocationDetails = () => {
+          fetch(
+              "https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572"
+          )
+              .then(response => response.json())
+              .then(data => setDetails(data));
+      };
+
+      const getlocation =()=>{
+        getUserGeolocationDetails();
+        fetch(`${api.base}weather?q=${details.city}&units=${unit}&APPID=${api.key}`)
+          .then(res => res.json())
+          .then(result => {
+            setWeather(result);
+            setQuery('');
+            console.log(result);
+          });
+      } 
+
+  
   
     const search = evt => {
       if (evt.key === "Enter") {
@@ -70,6 +91,7 @@ function App() {
           <div className="search-box">
             <input type="text" placeholder="Search Location" onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search} />
           </div>
+          <button onClick={getlocation}>Use Loaction</button>
 
           {(typeof weather.main != "undefined") ? (
           <div className = 'MainData'>
