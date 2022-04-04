@@ -30,7 +30,7 @@ const ToDoForm = ({ addTask }) => {
             <input className='textbox' value={userInput} type="text" onChange={handleChange} placeholder="Class Name"/>
             <input className='textbox' value={userStartInput} type="text" onChange={handlestartChange} placeholder="Start Time"/>
             <input className='textbox' value={userEndInput} type="text" onChange={handleendChange} placeholder="End Time"/>
-            <button className='submittbtn'>Add</button>
+            <button className='submittbtn'>Submit</button>
             </form>
         </div>
         
